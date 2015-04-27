@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/app.css" type="text/css" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     
     <script src="bower_components/jquery/jquery-2.0.3.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-aria/angular-aria.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="bower_components/angular-material/angular-material.min.js"></script>
@@ -22,33 +23,49 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.1.8/svg-morpheus.js"></script>  
     
     <script src="js/app.js"></script>
+    <!-- <script src="js/controllers/gridListDemoCtrl.js"></script> -->
     
 </head>
 <body>
-		 <div ng-controller="AppCtrl" layout="column" style="height:500px;">
-	  <section layout="row" flex>
-	    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+	<div ng-controller="AppCtrl">
+	    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
 	      <md-toolbar class="md-theme-indigo">
-	        <h1 class="md-toolbar-tools">Sidenav</h1>
+	        <h1 class="md-toolbar-tools">Aerial Eire</h1>
 	      </md-toolbar>
-	      <md-content layout-padding ng-controller="LeftCtrl">
-	        <a class="md-button md-default-theme" aria-label="Close Side Nav" ng-click="close()">
-	            <span class="ng-binding ng-scope">Close Side Nav</span>
-	         </a>
-	      </md-content>
+	      <md-list layout="column">
+            <md-list-item>
+				<md-button class="md-primary" aria-label="Open Side Nav" ng-href="#home">
+					<ng-md-icon icon="menu" style="fill: green" size="32"></ng-md-icon>Home
+	          	</md-button>
+            </md-list-item>
+            <md-list-item>
+				<md-button class="md-primary" aria-label="Open Side Nav" ng-href="#about">
+					<ng-md-icon icon="menu" style="fill: green" size="32"></ng-md-icon>About
+	          	</md-button>
+            </md-list-item>
+            <md-list-item>
+				<md-button class="md-primary" aria-label="Open Side Nav" ng-href="#portfolio">
+					<ng-md-icon icon="menu" style="fill: green" size="32"></ng-md-icon>Portfolio
+	          	</md-button>
+            </md-list-item>
+            <md-list-item>
+				<md-button class="md-primary" aria-label="Open Side Nav" ng-href="#social">
+					<ng-md-icon icon="menu" style="fill: green" size="32"></ng-md-icon>Social
+	          	</md-button>
+            </md-list-item>		
+            <md-list-item>
+				<md-button class="md-primary" aria-label="Open Side Nav" ng-href="#contact">
+					<ng-md-icon icon="menu" style="fill: green" size="32"></ng-md-icon>Contact
+	          	</md-button>
+            </md-list-item>
+        </md-list>
 	    </md-sidenav>
-	    <md-content flex layout-padding>
-	      <div layout="column" layout-fill layout-align="top center">
-	        <div>
-	          <md-button ng-click="toggleLeft()"
-	            class="md-primary" aria-label="Open Side Nav">
+	    <md-toolbar layout="row" class="md-toolbar-tools">
+        	<md-button ng-click="toggleLeft()" class="md-primary" aria-label="Open Side Nav">
 	            <ng-md-icon icon="menu" style="fill: green" size="32"></ng-md-icon>
-	          </md-button>
-	        </div>
-	      </div>
-	      <div flex></div>
-	    </md-content>
-	  </section>
+	     	</md-button>
+        	<h1 class="md-primary">Aerial Eire</h1>
+    	</md-toolbar>
 	</div>
     <section id="container">
         <div id="content" ui-view>
