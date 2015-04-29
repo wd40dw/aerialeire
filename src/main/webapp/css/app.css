@@ -1,15 +1,52 @@
-section.module.parallax {
-  height: 1200px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
-section.module.parallax-1 { background-image: url("../images/1.jpg"); }
+p {
+  line-height: 2rem;
+}
 
-section.module.parallax-2 { background-image: url("../images/2.jpg"); }
+.button-collapse {
+  color: #26a69a;
+}
 
-section.module.parallax-3 { background-image: url("../images/3.jpg"); }
+.parallax-container {
+  height: 580px;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
 
 
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
