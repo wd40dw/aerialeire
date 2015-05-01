@@ -1,50 +1,123 @@
-<div class="row">
+<div class="row" ng-controller="PortfolioController">
 
-      <div class="col s4">
-        	<div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/4.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-      </div>
-      <div class="col s4">
-        	<div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/5.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-      </div>
-      <div class="col s4">
-        	<div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/7.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-      </div>
+	<div class="row">
+		<div class="col s12">
+			<ul class="tabs tab-demo z-depth-1 teal lighten-3" style="width: 100%;">
+				<li class="tab col s3"><a class="active" href="#test1">Test 1</a></li>
+				<li class="tab col s3"><a href="#test2">Test
+						2</a></li>
+				<li class="tab col s3"><a href="#test3">Test 3</a></li>
+				<li class="tab col s3"><a href="#test4">Test 4</a></li>
+			</ul>
+		</div>
+		<div id="test1" class="col s12">
+			<div class="row">
+				<div class="col s12"></div>
+				<div id="all" class="col s12">
+					<div class="row galleryContainer">
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/4.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/5.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/6.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="test2" class="col s12">
+			<div class="row">
+				<div class="col s12"></div>
+				<div id="all" class="col s12">
+					<div class="row galleryContainer">
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/1.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/2.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/3.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="test3" class="col s12">
+			<div class="row">
+				<div class="col s12"></div>
+				<div id="all" class="col s12">
+					<div class="row galleryContainer">
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/7.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/1.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/6.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="test4" class="col s12">
+			<div class="row">
+				<div class="col s12"></div>
+				<div id="all" class="col s12">
+					<div class="row galleryContainer">
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/4.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/4.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+						<div class="col l4 s6">
+							<div class="material-placeholder">
+								<img src="images/4.jpg" data-caption="Some demo Text"
+									class="materialboxed responsive-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    </div>
- 
+</div>
