@@ -13,20 +13,20 @@ var myAppModule = angular.module('myAppModule', ['ui.router', 'ngResource', 'ngM
     		templateUrl: 'partials/about.html',
     		controller: myAppModule.AboutController
     	})
-    	.state('portfolio', {
-    		url: '/portfolio',
-    		templateUrl: 'partials/portfolio.html',
-    		controller: myAppModule.PortfolioController
+    	.state('photos', {
+    		url: '/photos',
+    		templateUrl: 'partials/photos.html',
+    		controller: myAppModule.PhotosController
     	})
     	.state('contact', {
     		url: '/contact',
     		templateUrl: 'partials/contact.html',
     		controller: myAppModule.ContactController
     	})
-    	.state('social', {
-    		url: '/social',
-    		templateUrl: 'partials/social.html',
-    		controller: myAppModule.SocialController
+    	.state('videos', {
+    		url: '/videos',
+    		templateUrl: 'partials/videos.html',
+    		controller: myAppModule.VideosController
           });
     	
 } ]);
