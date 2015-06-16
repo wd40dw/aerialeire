@@ -1,34 +1,19 @@
-  <div class="row">
-    <form class="col l6 offset-l3 s12">
-      <div class="row">
-        <div class="card-panel teal lighten-2">
-        	<h5 class="white-text">Contact Us</h5>
-        </div>
-        <div class="input-field col s12">
-          <i class="mdi-action-account-circle prefix"></i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Your Name</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="mdi-communication-email prefix"></i>
-          <input id="icon_email" type="email" class="validate">
-          <label for="icon_email">E-Mail Address</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="mdi-communication-phone prefix"></i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Phone Number</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="mdi-image-camera-alt prefix"></i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Describe what you would like photographed</label>
-        </div>
-        <div class="col l6 s12">
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-	    	<i class="mdi-content-send right"></i>
-	  	</button>
-	  	</div>
-      </div>
-    </form>
-  </div>
+
+<div class="row">
+	<br>
+	<div class="center">
+		<a class="btn" onclick="Materialize.fadeInImage('#image-test')">Contact
+			Us</a>
+	</div>
+	<br>
+	<div class="col s12">
+		<div class="row galleryContainer">
+				<div class="col l12 s12">
+			<img id="image-test" ng-src="
+						images/contact.jpg"
+				style="opacity: 0; width: 100%;
+height: 100%;">
+				</div>
+		</div>
+	</div>
+</div>
